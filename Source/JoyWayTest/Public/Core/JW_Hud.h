@@ -9,9 +9,8 @@
 UCLASS()
 class JOYWAYTEST_API AJW_Hud : public AHUD
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
     AJW_Hud();
-	
 };
