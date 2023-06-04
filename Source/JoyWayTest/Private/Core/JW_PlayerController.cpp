@@ -12,7 +12,11 @@ void AJW_PlayerController::OnPossess(APawn* InPawn)
     if (!CurrentCharacter)
     {
         UE_LOG(LogJW_PlayerController, Error, TEXT("Failed to cast possessed character to base character class"))
+        return;
     }
+    CurrentCharacter->OnDeath.BindLambda([&]() {
+        ChangeState(NAME_Spectating);
+    });
 }
 
 void AJW_PlayerController::SetupInputComponent()

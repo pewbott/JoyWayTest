@@ -15,7 +15,8 @@ public class JoyWayTest : ModuleRules
 		PublicIncludePaths.AddRange(new string[]
 		{
 			"JoyWayTest/Public",
-			"JoyWayTest/Public/Core"
+			"JoyWayTest/Public/Core",
+			"JoyWayTest/Public/Components",
 		});
 	}
 }
